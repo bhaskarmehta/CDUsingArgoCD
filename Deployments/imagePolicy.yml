@@ -9,4 +9,4 @@ spec:
     namespace: flux-system
   policy:
     semver:
-      range: .*
+      range: 1.1.x
