@@ -3,6 +3,7 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
    name: mydeployment
+   namespace: default
 spec:
    replicas: 1
    selector:
