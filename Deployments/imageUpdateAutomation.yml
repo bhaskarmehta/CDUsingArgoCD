@@ -30,7 +30,8 @@ spec:
       ref:
         branch: main
     commit:
-      {'author': 'bhaskarmehta'}
+      author: 
+        name: Bhaskar
             
   interval: 1m
   sourceRef:
