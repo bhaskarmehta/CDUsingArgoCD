@@ -30,9 +30,8 @@ spec:
       ref:
         branch: main
     commit:
-      authorEmail: bhaskarmehta422@gmail.com
-      authorName: bhaskarmehta
-      messageTemplate: 'update image'      
+      author: bhaskarmehta
+            
   interval: 1m
   sourceRef:
     kind: GitRepository 
