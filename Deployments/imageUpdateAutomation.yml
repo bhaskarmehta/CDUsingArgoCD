@@ -32,7 +32,7 @@ spec:
     commit:
       author: 
         name: Bhaskar
-            
+        email: bhaskarmehta422@gmail.com   
   interval: 1m
   sourceRef:
     kind: GitRepository 
