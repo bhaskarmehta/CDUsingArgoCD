@@ -25,6 +25,10 @@ metadata:
   name: imageupdateautomation 
   namespace: flux-system
 spec:
+  git:
+    checkout:
+      ref:
+        branch: main
   interval: 1m
   sourceRef:
     kind: GitRepository 
