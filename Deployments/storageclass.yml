@@ -4,7 +4,7 @@ metadata:
   name: my-sc
 provisioner: efs.csi.aws.com
 parameters:
-  provisioningMode: efs-ap
+  provisioningMode: Retain
   fileSystemId: fs-082255369ec3520ad
 
 
