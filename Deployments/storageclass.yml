@@ -1,12 +1,29 @@
-kind: StorageClass
+# kind: StorageClass
+# apiVersion: storage.k8s.io/v1
+# metadata:
+#   name: my-sc
+# provisioner: efs.csi.aws.com
+# parameters:
+#   provisioningMode: Delete
+#   fileSystemId: fs-082255369ec3520ad
+
+# apiVersion: storage.k8s.io/v1
+# kind: StorageClass
+# metadata:
+#   name: my-sc
+# provisioner: ebs.csi.aws.com
+# # volumeBindingMode: WaitForFirstConsumer
+# parameters:
+#   type: gp2
+#   fsType: ext4
+
 apiVersion: storage.k8s.io/v1
+kind: StorageClass
 metadata:
   name: my-sc
-provisioner: efs.csi.aws.com
+provisioner: kubernetes.io/aws-ebs
 parameters:
-  provisioningMode: Delete
-  fileSystemId: fs-082255369ec3520ad
-
+  fsType: ext4
 
 # apiVersion: storage.k8s.io/v1
 # kind: StorageClass
