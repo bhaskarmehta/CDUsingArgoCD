@@ -23,7 +23,7 @@ spec:
         volumeMounts:
           - mountPath: /data 
             name: my-path 
-    volumes: 
+      volumes: 
       - name: my-path 
         PersistentVolumeClaim: 
           claimName: "my-pvc"         
