@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: my-pvc3
+  name: my-pvc
   namespace: default
 spec:
-  storageClassName: "my-sc2"
+  storageClassName: "my-sc"
   accessModes:
     - ReadWriteMany
   resources:

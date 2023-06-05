@@ -20,8 +20,8 @@
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
-  name: my-sc2
-provisioner: ebs.csi.aws.com
+  name: my-sc
+provisioner: kubernetes.io/aws-ebs
 parameters:
    fsType: ext4
 volumeBindingMode: WaitForFirstConsumer
