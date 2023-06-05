@@ -4,7 +4,7 @@ metadata:
   name: my-pvc
   namespace: default
 spec:
-  storageClassName: "my-sc"
+  storageClassName: "gp2"
   accessModes:
     - ReadWriteMany
   resources:
