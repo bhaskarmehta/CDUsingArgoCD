@@ -21,13 +21,13 @@ spec:
         ports:
         - containerPort: 80
         imagePullPolicy: Always
-      #   volumeMounts:
-      #   - mountPath: /tmp/data
-      #     name: my-path
-      # volumes:
-      # - name: my-path
-      #   persistentVolumeClaim:
-      #     claimName: "my-pvc3"
+        volumeMounts:
+        - mountPath: /tmp/data
+          name: my-path
+      volumes:
+      - name: my-path
+        persistentVolumeClaim:
+          claimName: "my-pvc"
 ---
 kind: Deployment
 apiVersion: apps/v1
