@@ -23,7 +23,7 @@ metadata:
   name: my-sc
 provisioner: kubernetes.io/aws-ebs
 parameters:
-  fsType: ext4
+   fsType: ext4
 
 # apiVersion: storage.k8s.io/v1
 # kind: StorageClass
