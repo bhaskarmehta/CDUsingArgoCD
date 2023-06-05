@@ -27,7 +27,7 @@ spec:
       volumes:
       - name: my-path
         persistentVolumeClaim:
-          claimName: "my-pvc2"
+          claimName: "my-pvc3"
 ---
 kind: Deployment
 apiVersion: apps/v1
