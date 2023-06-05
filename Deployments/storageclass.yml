@@ -21,7 +21,7 @@ apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
   name: my-sc
-provisioner: ebs.csi.aws.com
+provisioner: kubernetes.io/aws-ebs
 parameters:
    fsType: ext4
 volumeBindingMode: WaitForFirstConsumer
@@ -31,7 +31,7 @@ reclaimPolicy: Delete
 # kind: StorageClass
 # metadata:
 #   name: standard
-# provisioner: kubernetes.io/
+# provisioner: kubernetes.io/aws-ebs
 # parameters:
 #   type: gp2
 # reclaimPolicy: Retain
