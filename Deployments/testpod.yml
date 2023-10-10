@@ -8,10 +8,10 @@ spec:
         image: nginx
         ports:
           - containerPort: 80
-        volumeMounts: 
-           - name: myvol
-             mountPath: /temp/data
-   volumes:
-    - name: myvol 
-      persistentVolumeClaim: 
-         claimName: my-pvc               
+   #      volumeMounts: 
+   #         - name: myvol
+   #           mountPath: /temp/data
+   # volumes:
+   #  - name: myvol 
+   #    persistentVolumeClaim: 
+   #       claimName: my-pvc               
