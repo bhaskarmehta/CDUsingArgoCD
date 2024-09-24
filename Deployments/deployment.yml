@@ -17,7 +17,7 @@ spec:
       serviceAccountName: my-sa
       containers:
       - name: angularcontanier
-        image: bhasmeht/angular-image:14
+        image: bhasmeht/angular-image:15
         ports:
         - containerPort: 80
         imagePullPolicy: Always
